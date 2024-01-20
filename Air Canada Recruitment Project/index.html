@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Canada Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Air_Canada_Logo.svg/1200px-Air_Canada_Logo.svg.png" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fa-solid fa-plane"></i>
+        </div>
+        <!-- links -->
+        <div class="links">
+          <div class="dropdown">
+            <a href="#home">Home</a>
+        </div>
+        
+        <div class="dropdown">
+            <a href="" onclick="toggleDropdown('dropdown2')">About</a>
+            <div id="dropdown2" class="dropdown-content">
+                <a href="#workplace">Workplace</a>
+                <a href="#awards">Awards</a>
+                <a href="#employees">Employees</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#salary">Salary</a>
+        </div>
+
+        <div class="dropdown">
+          <a href="#apply">Apply</a>
+        </div>
+      
+        <div class="dropdown">
+          <button class="btn-color" onclick="changeColors()">Change Color</button>
+        </div>
+
+      </div>
+        <!-- social media icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/aircanada/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/AirCanada?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aircanada/?hl=en" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/air-canada/?originalSubdomain=ca" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/r/aircanada/" target="_blank">
+              <i class="fab fa-reddit"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- social icons close here -->
+        <!-- div class="nav-center" close here -->
+      </div>
+    </nav>
+
+    <div class="image" id="home">
+      <div class="image-text">
+        <h class="heading1"><b><i class="fa-brands fa-canadian-maple-leaf" style="color: #ff0000;"></i></i>AIR CANADA</b></h><br>
+        <h class="heading2"><b><i>NOW HIRING!</i></b></h>
+      </div>
+    </div>
+    
+    <div class="container1" id="workplace">
+      <div class="about-heading"><b><u>About Our Workplace</u></b></div>
+        <div class="content-container">
+          <div class="text-container">
+              <p class="para1">
+                <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Innovative Work Environment:</u></b> The airline industry demands innovation, and Air Canada embraces this challenge by encouraging a dynamic and creative work environment where employees are empowered to contribute innovative ideas.<br></br>
+                <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Commitment to Employee Development:</u></b> The company is dedicated to investing in its employees' growth and development through training programs, mentorship initiatives, and opportunities for career advancement. <br></br>
+                <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Community Engagement:</u></b> The company actively engages in community initiatives and social responsibility projects, allowing employees to participate in meaningful activities that contribute to the well-being of society. <br></br>
+                <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Safety First Approach:</u></b> Air Canada prioritizes the safety and well-being of its employees, providing comprehensive safety training and implementing industry-leading safety protocols. <br></br>
+                <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Diverse and Inclusive Culture:</u></b> Air Canada fosters a workplace culture that values diversity and inclusion, ensuring that employees from various backgrounds feel welcome and appreciated. </br>
+              </p>
+           </div>
+          <div class="image-container">
+            <a href="https://i.imgur.com/Wulj9Ih.jpg" target="_blank">
+              <img src="https://static2.abay.vn/Images/2022/06/15/ve-may-bay-air-canada-3.jpg" class="about-img">
+            </a>  
+          </div>
+       </div>
+    </div>
+
+    <div class="container2" id="awards">
+      <h class="achievements-heading"><b><u>Awards and Achievements</u></b></h>
+
+      <div class="post" id="post1">
+       <a href="https://mma.prnewswire.com/media/1900764/OHS_honoursAwards.jpg?p=facebook" target="_blank"> 
+        <img src="https://mma.prnewswire.com/media/1900764/OHS_honoursAwards.jpg?p=facebook" alt="Image 1" class="image1">
+       </a>
+        <p class="achievements-desc"><a href="https://www.newswire.ca/news-releases/air-canada-wins-workplace-health-and-safety-awards-for-culture-and-for-technology-at-ohs-honours-899060874.html" target="_blank" class="achievements-article">Air Canada Wins Workplace Health and Safety Awards for Culture and for Technology at OHS Honours</a></p>
+        <div class="buttons">
+          <button onclick="like('post1')"><i class="fas fa-thumbs-up"></i> Like</button>
+          <button onclick="dislike('post1')"><i class="fas fa-thumbs-down"></i> Dislike</button>
+          <button onclick="reset('post1')"><i class="fas fa-sync"></i> Reset</button>
+        </div>
+        <div class="rating-container">
+        <p class="rating"><u>Rating:</u></p><div class="count" id="count1">0</div>
+        </div>
+      </div>
+    
+      <div class="post" id="post2">
+       <a href="https://mma.prnewswire.com/media/924660/Air_Canada_Air_Canada_Named_Best_Airline_in_North_America_for_Th.jpg?p=facebook" target="_blank">
+        <img src="https://mma.prnewswire.com/media/924660/Air_Canada_Air_Canada_Named_Best_Airline_in_North_America_for_Th.jpg?p=facebook" alt="Image 2" class="image2">
+       </a> 
+        <p class="achievements-desc"><a href="https://www.newswire.ca/news-releases/air-canada-named-best-airline-in-north-america-for-third-straight-year-at-2019-skytrax-world-airline-awards-899829384.html" target="_blank" class="achievements-article">Air Canada Named Best Airline in North America for Third Straight Year at 2019 Skytrax World Airline Awards</a></p>
+        <div class="buttons">
+          <button onclick="like('post2')"><i class="fas fa-thumbs-up"></i> Like</button>
+          <button onclick="dislike('post2')"><i class="fas fa-thumbs-down"></i> Dislike</button>
+          <button onclick="reset('post2')"><i class="fas fa-sync"></i> Reset</button>
+        </div>
+        <div class="rating-container">
+        <p class="rating"><u>Rating:</u></p><div class="count" id="count2">0</div></p>
+        </div>
+      </div>
+   
+      <div class="post" id="post3">
+       <a href="https://milesopedia.com/wp-content/uploads/2023/09/APEX-2024-AC-1-.png" target="_blank">
+        <img src="https://milesopedia.com/wp-content/uploads/2023/09/APEX-2024-AC-1-.png" alt="Image 3" class="image3">
+       </a> 
+        <p class="achievements-desc"><a href="https://milesopedia.com/en/news/apex-2024-air-canada-5-stars/" target="_blank" class="achievements-article">APEX 2024: Air Canada Awarded 5 Stars in The International Airlines Category</a></p>
+        <div class="buttons">
+          <button onclick="like('post3')"><i class="fas fa-thumbs-up"></i> Like</button>
+          <button onclick="dislike('post3')"><i class="fas fa-thumbs-down"></i> Dislike</button>
+          <button onclick="reset('post3')"><i class="fas fa-sync"></i> Reset</button>
+        </div>
+        <div class="rating-container">
+        <p class="rating"><u>Rating:</u></p><div class="count" id="count3">0</div>
+        </div>
+        </div>
+      </div> <!-- container 2 closing div -->
+
+      <main>
+        <section class="container3" id="employees">
+          <div class="title">
+            <h2>What Our Employees Think</h2>
+            <div class="underline"></div>
+          </div>
+          <article class="review">
+            <div class="img-container">
+              <img src="" id="person-img" alt="" />
+            </div>
+            <h4 id="author">Name of the employee</h4> <!-- javascript -->
+            <p id="job">Their job occupation</p> <!-- javascript -->
+            <p id="info"> <!-- javascript -->
+              Description of the job occupation: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?
+            </p>
+            <p id="stat"></p>
+            <!-- prev and next buttons-->
+            <div class="button-container">
+              <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <!-- random button -->
+            <button class="first">first person</button><button class="last">last person</button><button class="random-btn">surprise me</button>
+          </article>
+        </section>
+      </main>
+
+      <div class="container1" id="salary">
+        <div class="salary-heading"><b><u>Salary</u></b></div>
+          <div class="content-container">
+            <div class="text-container">
+           
+                <div class="salary-info">
+                    <h class="net-worth"><b><u>Est. Net Worth:</u></b> $<span id="currentSalary">50,000</span></h2>
+                    <p id="experience" class="experience"><b>Years of Experience:</b> <span>1</span></p>                   
+                </div>
+                <div class="underline2"></div>
+                <p class="para1">
+                  <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Starting Wage:</u></b> $25.00 CAD    <br></br>
+                  <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Medial Coverage:</u></b> In-network doctor visits covered at 90%, with a $20 copayment. Hospitalization covered at 100% after a $500 deductible. Prescription medications covered with a tiered copayment system. <br></br>
+                  <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Dental Coverage:</u></b> Routine dental check-ups covered at 80%. Basic dental procedures (fillings, extractions) covered at 70%. Orthodontic coverage available as an optional add-on with a separate deductible. <br></br>
+                  <i class="fa-solid fa-plane" id="plane-point"></i> <b><u>Wellness Benefits:</u></b> Gym membership reimbursement up to $200 per year. Smoking cessation programs covered at 100%. <br></br>
+                </p>
+             </div>
+            <div class="image-container">
+              <a href="https://cdn-res.keymedia.com/cms/images/us/036/0270_638313359123593976.jpg" target="_blank">
+                <img src="https://cdn-res.keymedia.com/cms/images/us/036/0270_638313359123593976.jpg" class="about-img">
+              </a>  
+            </div>
+         </div>
+      </div>
+
+      <section class="container4" id="apply">
+        <div class="heading-center"> 
+        <h class="applyheading"><b><u>Ready to Apply?</u></b></h>
+        </div>
+        <form method="post" id="survey-form" action="https://www.aircanada.com/ca/en/aco/home/aeroplan/status/report-sqd-discrepancies/thank-you.html#/">
+         <section class="center">
+          <h6>Enter your email address to register and inquiry!</h6>
+         <div class="info">
+         <label for="name" id="info-quesiton">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter name" required/>
+         </div> 
+          <div class="info">
+          <label for="email" id="info-quesiton">Email:</label>
+         <input type="email" name="email" id="email" placeholder="e.g.: abcd123@gmail.com" required/>
+        </div>
+        <div class="info">
+        <label for="birth-date" id="info-quesiton">D.O.B.</label>
+        <input type="date" name="birth-date" id="birth-date" required/>
+        </div>
+     <p class="paragraph2">Please select your gender:</p>
+           <input type="radio" id="male" name="gender" value="Male">
+           <label for="male" id="options">Male</label><br>
+           <input type="radio" id="female" name="gender" value="Female">
+           <label for="Female" id="options">Female</label><br>
+           <input type="radio" id="Other" name="gender" value="Other">
+           <label for="Other" id="options">Other</label>
+       <br>
+       <br>
+       <p class="paragraph3">Please accept our and terms and conditions:</p>
+     <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" class="inline" required/> I accept the <a href="https://s.on-device.com/termsAndConditions" target="_blank">terms and conditions</a> of this form.
+         </label>
+       <br>
+     <div class="submit-container">
+         <button type="submit" class="submit-btn" >Submit</button>
+       </div>
+         </section>
+     </form>
+
+     <div class="footer">
+      <p class="para">&copy; 2024 AIR CANADA | All Rights Reserved</p>
+        <address>
+           Credits:<br>
+           Devesh Darji (content creator)<br><a class="link" href="https://www.aircanada.com/ca/en/aco/home.html" target="_blank"><u>AirCanada.ca</u></a><br /><br>
+           
+           Country: Canada<br/>
+           Province: British Columbia<br/>
+           Address: 10441 132 St, Surrey<br/>
+           Postal code: V3T 3V3<br/>
+         </address>
+      <img class="footimg" src="https://i.pinimg.com/474x/a1/da/75/a1da756852e9f1374a70c423ff5e0fe6.jpg">
+      </div>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <!-- my font awesome -->
+    <script src="https://kit.fontawesome.com/cb263857a6.js"></script>
+  </body>
+</html>
