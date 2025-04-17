@@ -1,2 +1,3 @@
 # Air-Canada-Project-Computer-Programming-12
-Air Canada last project for computer programming 12 course
+Air Canada last project for Computer Programming 12
+
